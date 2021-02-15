@@ -1,32 +1,72 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <TheNavigation />
+    <div id="main-wrapper">
+      <section id="introduction">
+        <b-container
+          class="h-100 d-flex flex-column align-content-center justify-content-center text-center"
+        >
+          <b-jumbotron
+            bg-variant="transparent"
+            text-variant="light"
+            header="Hey, I'm Eriq"
+            lead="I am a developer and a freelancer."
+          >
+            <b-button pill variant="light" size="lg">
+              View my projects
+            </b-button>
+          </b-jumbotron>
+        </b-container>
+
+        <div class="hint-down">
+          <b-icon
+            variant="white"
+            icon="arrow-down"
+            font-scale="4"
+            animation="cylon-vertical"
+          ></b-icon>
+        </div>
+      </section>
+      <section id="about">
+        <b-container>
+          <h1 class="text-center section-title">About</h1>
+
+          <b-alert show variant="success">
+            This section is under construction.
+          </b-alert>
+          <b-row cols="1" cols-md="2" id="about-row"> </b-row>
+        </b-container>
+      </section>
+      <section id="projects">
+        <h1 class="text-center section-title">Projects</h1>
+
+        <b-container>
+          <b-alert show variant="success">
+            This section is under construction.
+          </b-alert>
+          <b-row cols="1" cols-md="2" cols-lg="3"> </b-row>
+        </b-container>
+      </section>
+      <section id="contact">
+        <b-container>
+          <h1 class="text-center section-title">Contact</h1>
+
+          <b-alert show variant="success">
+            This section is under construction.
+          </b-alert>
+        </b-container>
+      </section>
     </div>
-    <router-view />
   </div>
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+<script>
+import TheNavigation from "./components/TheNavigation";
+export default {
+  components: {
+    TheNavigation,
+  },
+};
+</script>
+<style lang="scss">
+@import "assets/css/main.scss";
 </style>
