@@ -1,6 +1,6 @@
 <template>
   <section id="about">
-    <div class="glass-background">
+    <div class="glass-background offset">
       <b-container>
         <h1 class="text-center section-title">About</h1>
 

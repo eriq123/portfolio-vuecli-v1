@@ -1,13 +1,33 @@
+// variables
+$primary-font: Avenir, Helvetica, Arial, sans-serif;
+$secondary-font: "Times New Roman", Times, serif;
+
+// init
 :root {
 	font-size: 16px;
 }
 
-$primary-font: Avenir, Helvetica, Arial, sans-serif;
-$secondary-font: "Times New Roman", Times, serif;
 #app {
 	font-family: $primary-font;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+// global
+.offset {
+	padding-top: 3rem;
+}
+.section-title {
+	padding: 2rem 0;
+}
+.glass-background {
+	background: rgba($color: white, $alpha: 0.5);
+}
+
+// specific
+#main-navigation {
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 #main-wrapper {
@@ -23,7 +43,7 @@ $secondary-font: "Times New Roman", Times, serif;
 }
 
 #introduction {
-	height: 95vh;
+	height: 100vh;
 	position: relative;
 	p {
 		font-size: 1.5rem;
@@ -46,7 +66,6 @@ $secondary-font: "Times New Roman", Times, serif;
 	background-attachment: fixed;
 	background-size: cover;
 	.glass-background {
-		background: rgba($color: white, $alpha: 0.5);
 		margin-bottom: 2rem;
 	}
 	.about-row {
@@ -66,29 +85,37 @@ $secondary-font: "Times New Roman", Times, serif;
 		flex-direction: column;
 		align-content: center;
 		justify-content: center;
+		margin: 1rem auto;
 		img {
 			margin: auto;
 		}
-		h3 {
-			margin-top: 2rem;
-		}
+		// h3 {
+		// 	margin-top: 2rem;
+		// }
 	}
-}
-.section-title {
-	padding: 2rem 0;
 }
 
 #projects {
 	min-height: 100vh;
 	color: white;
 }
+
 #contact {
 	height: 100vh;
-	background-image: linear-gradient(
-		to bottom left,
-		rgb(166, 211, 224),
-		rgb(144, 163, 184)
-	);
+	// background-image: linear-gradient(
+	// 	to bottom left,
+	// 	rgb(166, 211, 224),
+	// 	rgb(144, 163, 184)
+	// );
+	#contact-form {
+		max-width: 450px;
+		margin: auto;
+		border-radius: 1rem;
+		padding: 1.5rem 1rem;
+	}
+	.offset {
+		padding-bottom: 5rem;
+	}
 }
 
 // Small devices (landscape phones, less than 768px)
@@ -104,13 +131,13 @@ $secondary-font: "Times New Roman", Times, serif;
 }
 
 // Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) {
-}
+// @media (max-width: 991.98px) {
+// }
 
 // Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {
-}
+// @media (max-width: 1199.98px) {
+// }
 
 // X-Large devices (large desktops, less than 1400px)
-@media (max-width: 1399.98px) {
-}
+// @media (max-width: 1399.98px) {
+// }
