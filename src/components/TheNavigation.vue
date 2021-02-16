@@ -16,18 +16,23 @@
       </b-navbar-brand>
 
       <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav
-          class="ml-auto text-center"
-          v-b-scrollspy:navbar-nav-scroller
-        >
-          <b-nav-item href="#about" class="mx-3">About</b-nav-item>
-          <b-nav-item href="#projects" class="mx-3">Projects</b-nav-item>
-          <b-nav-item href="#projects" class="mx-3">Contact</b-nav-item>
+        <b-navbar-nav class="ml-auto text-center">
+          <b-nav-item href="#about" v-scroll-to="'#about'" class="mx-3"
+            >About</b-nav-item
+          >
+          <b-nav-item href="#projects" v-scroll-to="'#projects'" class="mx-3"
+            >Projects</b-nav-item
+          >
+          <b-nav-item href="#" v-scroll-to="'#contact'" class="mx-3"
+            >Contact</b-nav-item
+          >
         </b-navbar-nav>
       </b-collapse>
     </b-container>
   </b-navbar>
 </template>
 <script>
-export default {};
+export default {
+  name: "TheNavigation",
+};
 </script>
