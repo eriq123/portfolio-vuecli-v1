@@ -28,9 +28,10 @@
               innovative solutions to clients as well as explore my life as an
               entrepreneur.
             </h2>
-            <b-button pill size="lg" class="mt-3 ml-2" variant="outline-primary"
-              >Download resume</b-button
-            >
+            <b-button size="lg" class="mt-3 ml-2" variant="outline-primary">
+              <b-icon icon="download" class="mr-1"></b-icon>
+              Resume
+            </b-button>
           </b-col>
         </b-row>
       </b-container>
