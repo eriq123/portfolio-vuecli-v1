@@ -9,7 +9,7 @@
             <b-img-lazy
               fluid
               rounded="circle"
-              width="450"
+              width="250"
               :src="require('@/assets/eriq.jpg')"
               alt="Photo of Eriq John Mendoza"
             ></b-img-lazy>
