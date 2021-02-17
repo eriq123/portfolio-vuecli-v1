@@ -10,7 +10,7 @@
     >
       <Introduction />
       <About />
-      <!-- <Projects /> -->
+      <Projects />
       <Contact />
       <TheFooter />
 
@@ -26,7 +26,7 @@
 import TheNavigation from "./components/TheNavigation";
 import Introduction from "./components/Introduction";
 import About from "./components/About";
-// import Projects from "./components/Projects";
+import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import TheFooter from "./components/TheFooter";
 export default {
@@ -35,7 +35,7 @@ export default {
     TheNavigation,
     Introduction,
     About,
-    // Projects,
+    Projects,
     Contact,
     TheFooter,
   },
