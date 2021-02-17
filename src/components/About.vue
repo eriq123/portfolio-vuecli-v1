@@ -16,12 +16,12 @@
           </b-col>
           <b-col class="px-3 text-justify">
             <h2 class="about-description">
-              I am a developer that mainly focused in Laravel and Vue JS
+              I am a developer that mainly focused on Laravel and Vue JS
               websites.
             </h2>
             <h2 class="about-description">
-              I have a deep passion with coding and has a strong commitment
-              towards meeting the client's requirement.
+              I have a deep passion for coding and has a strong commitment to
+              meeting the client's requirement.
             </h2>
             <h2 class="about-description">
               I spent more than a year as a freelancer where I provide
