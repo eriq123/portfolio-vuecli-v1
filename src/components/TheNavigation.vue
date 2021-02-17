@@ -20,7 +20,10 @@
           alt="Eriq John Mendoza Logo"
           v-scroll-to="'#main-wrapper'"
         ></b-img-lazy>
-        <h3 class="ml-3 mb-0 align-self-center" v-scroll-to="'#main-wrapper'">
+        <h3
+          class="ml-1 ml-lg-3 mb-0 align-self-center"
+          v-scroll-to="'#main-wrapper'"
+        >
           Eriq John Mendoza
         </h3>
       </b-navbar-brand>
@@ -30,9 +33,9 @@
           <b-nav-item href="#about" v-scroll-to="'#about'" class="mx-3"
             >About</b-nav-item
           >
-          <!-- <b-nav-item href="#projects" v-scroll-to="'#projects'" class="mx-3"
+          <b-nav-item href="#projects" v-scroll-to="'#projects'" class="mx-3"
             >Projects</b-nav-item
-          > -->
+          >
           <b-nav-item href="#" v-scroll-to="'#contact'" class="mx-3"
             >Contact</b-nav-item
           >

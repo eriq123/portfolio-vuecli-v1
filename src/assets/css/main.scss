@@ -71,7 +71,8 @@ $secondary-font: "Times New Roman", Times, serif;
 	}
 	.about-description {
 		font-family: $secondary-font;
-		letter-spacing: 0.25rem;
+		letter-spacing: 0.2rem;
+		font-size: 1.8rem;
 		font-weight: normal;
 	}
 }
@@ -108,6 +109,7 @@ $secondary-font: "Times New Roman", Times, serif;
 		margin: auto;
 		border-radius: 1rem;
 		padding: 1.5rem 1rem;
+		background-color: white;
 	}
 	.contact-container {
 		padding-bottom: 20vh;
@@ -142,6 +144,10 @@ $secondary-font: "Times New Roman", Times, serif;
 		.hint-down {
 			bottom: 1rem;
 		}
+	}
+	#about .about-description {
+		letter-spacing: 0.01rem;
+		font-size: 1.5rem;
 	}
 	#contact .contact-container {
 		padding-bottom: 15vh;

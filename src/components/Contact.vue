@@ -4,7 +4,7 @@
       <b-container class="contact-container">
         <h1 class="text-center section-title text-white">Contact</h1>
 
-        <form action="" id="contact-form" class="glass-background">
+        <form action="" id="contact-form" class="">
           <b-form-group label="First Name:" label-for="first_name" class="mb-3">
             <b-form-input
               type="text"
