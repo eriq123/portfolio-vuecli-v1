@@ -15,4 +15,4 @@ npm install
 npm run serve
 ```
 
-Special thanks to https://www.svgbackgrounds.com/ for the svg background images.
+Special thanks to [svgbackground](https://www.svgbackgrounds.com/) and [vue-scrollto](https://github.com/rigor789/vue-scrollto).
