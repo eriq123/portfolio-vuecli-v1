@@ -19,9 +19,9 @@
       <b-icon
         class="hint-down-icon"
         variant="white"
-        icon="arrow-down"
+        icon="chevron-down"
         font-scale="4"
-        animation="cylon-vertical"
+        animation="fade"
         v-scroll-to="'#about'"
       ></b-icon>
     </div>
