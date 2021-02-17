@@ -1,7 +1,7 @@
 <template>
   <section id="contact">
     <div class="offset">
-      <b-container>
+      <b-container class="contact-container">
         <h1 class="text-center section-title text-white">Contact</h1>
 
         <form action="" id="contact-form" class="glass-background">
@@ -50,6 +50,16 @@
               max-rows="10"
             ></b-form-textarea>
           </b-form-group>
+          <div class="contact-submit-container">
+            <b-button
+              block
+              pill
+              variant="success"
+              class="contact-submit-button"
+            >
+              Submit
+            </b-button>
+          </div>
         </form>
       </b-container>
     </div>
