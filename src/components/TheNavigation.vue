@@ -26,7 +26,7 @@
       </b-navbar-brand>
 
       <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav class="ml-auto text-center mb-3 mb-lg-0">
+        <b-navbar-nav class="ml-auto text-center mb-3 mb-lg-0" id="main-nav">
           <b-nav-item href="#about" v-scroll-to="'#about'" class="mx-3"
             >About</b-nav-item
           >
