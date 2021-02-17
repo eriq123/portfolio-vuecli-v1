@@ -51,6 +51,21 @@ export default {
           alt: "sass icon",
         },
         {
+          src: `${require("../assets/icons/webpack.svg")}`,
+          width: "250",
+          alt: "webpack icon",
+        },
+        {
+          src: `${require("../assets/icons/github-1.png")}`,
+          width: "100",
+          alt: "github icon",
+        },
+        {
+          src: `${require("../assets/icons/bootstrap.svg")}`,
+          width: "100",
+          alt: "bootstrap icon",
+        },
+        {
           src: `${require("../assets/icons/vue.png")}`,
           width: "100",
           alt: "vue icon",
