@@ -109,7 +109,7 @@ $secondary-font: "Times New Roman", Times, serif;
 		margin: auto;
 		border-radius: 1rem;
 		padding: 1.5rem 1rem;
-		background-color: white;
+		background-color: rgba($color: white, $alpha: 0.9);
 	}
 	.contact-container {
 		padding-bottom: 20vh;
