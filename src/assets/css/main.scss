@@ -11,6 +11,18 @@ $secondary-font: "Times New Roman", Times, serif;
 	font-family: $primary-font;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+}
+.scroll-container {
+	position: fixed;
+	cursor: pointer;
+	bottom: 15px;
+	right: 25px;
+	.scroll-button {
+		border-radius: 50%;
+		padding: 0.25rem 0.5rem;
+		background-color: #ddd;
+	}
 }
 
 // global

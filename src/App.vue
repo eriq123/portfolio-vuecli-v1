@@ -13,6 +13,12 @@
       <!-- <Projects /> -->
       <Contact />
       <TheFooter />
+
+      <div class="scroll-container" v-if="visible">
+        <div class="scroll-button" v-scroll-to="'#app'">
+          <b-icon icon="caret-up-fill" variant="dark" font-scale="2"></b-icon>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -32,6 +38,22 @@ export default {
     // Projects,
     Contact,
     TheFooter,
+  },
+  data() {
+    return {
+      visible: false,
+    };
+  },
+  mounted: function () {
+    window.addEventListener("scroll", this.scrollListener);
+  },
+  beforeDestroy: function () {
+    window.removeEventListener("scroll", this.scrollListener);
+  },
+  methods: {
+    scrollListener: function () {
+      this.visible = window.scrollY > 200;
+    },
   },
 };
 </script>
