@@ -9,21 +9,33 @@
         header="Hey, I'm Eriq"
         lead="Developer and Freelancer"
       >
-        <b-button pill variant="outline-light" size="lg" v-scroll-to="'#about'">
+        <b-button
+          pill
+          variant="outline-light"
+          size="lg"
+          to="#about"
+          v-scroll-to="'#about'"
+        >
           More about me
         </b-button>
       </b-jumbotron>
     </b-container>
 
     <div class="hint-down">
-      <b-icon
-        class="hint-down-icon"
-        variant="white"
-        icon="chevron-down"
-        font-scale="4"
-        animation="fade"
+      <b-button
+        variant="transparent"
+        to="#about"
         v-scroll-to="'#about'"
-      ></b-icon>
+        class="p-0"
+      >
+        <b-icon
+          class="hint-down-icon"
+          variant="white"
+          icon="chevron-down"
+          font-scale="4"
+          animation="fade"
+        ></b-icon>
+      </b-button>
     </div>
   </section>
 </template>
