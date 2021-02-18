@@ -9,7 +9,7 @@
     v-b-scrollspy
   >
     <b-container>
-      <b-navbar-brand v-scroll-to="'#main-wrapper'" to="/" class="d-flex">
+      <b-navbar-brand v-scroll-to="'#app'" to="/" class="d-flex">
         <b-navbar-toggle
           target="nav-collapse"
           class="border-0"

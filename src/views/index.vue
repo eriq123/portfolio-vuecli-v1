@@ -7,9 +7,14 @@
     <TheFooter />
 
     <div class="scroll-container" v-if="visible">
-      <div class="scroll-button" v-scroll-to="'#app'">
+      <b-button
+        class="scroll-button"
+        variant="light"
+        to="/"
+        v-scroll-to="'#app'"
+      >
         <b-icon icon="caret-up-fill" variant="dark" font-scale="2"></b-icon>
-      </div>
+      </b-button>
     </div>
   </div>
 </template>
