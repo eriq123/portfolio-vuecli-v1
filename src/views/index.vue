@@ -1,11 +1,5 @@
 <template>
-  <div
-    id="main-wrapper"
-    data-bs-spy="scroll"
-    data-bs-target="#main-nav"
-    data-bs-offset="0"
-    tabindex="0"
-  >
+  <div id="main-wrapper">
     <Introduction />
     <About />
     <Projects />
