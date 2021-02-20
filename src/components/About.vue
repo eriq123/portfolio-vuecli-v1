@@ -28,10 +28,15 @@
               innovative solutions to clients as well as explore my life as an
               entrepreneur.
             </h2>
-            <b-button size="lg" class="mt-3 ml-2" variant="outline-primary">
+            <a
+              href="/files/CV_MENDOZA_20210220.pdf"
+              download="cv_mendoza.pdf"
+              role="button"
+              class="btn mt-3 ml-2 btn-outline-primary btn-lg"
+            >
               <b-icon icon="download" class="mr-1"></b-icon>
               Resume
-            </b-button>
+            </a>
           </b-col>
         </b-row>
       </b-container>
@@ -44,9 +49,6 @@ export default {
   name: "About",
   components: {
     Skills: () => import("./Skills"),
-  },
-  data() {
-    return {};
   },
 };
 </script>

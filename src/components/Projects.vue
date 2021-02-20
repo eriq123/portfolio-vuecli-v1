@@ -8,7 +8,7 @@
           Oops, it seems that there are no projects here.
         </b-alert>
         <b-row cols="1" cols-md="2" v-if="projects.length > 0">
-          <v-col
+          <b-col
             v-for="project in projects"
             :key="project.name"
             class="p-3 project-column"
@@ -20,7 +20,7 @@
               img-top
             >
             </b-card>
-          </v-col>
+          </b-col>
         </b-row>
       </b-container>
     </div>
