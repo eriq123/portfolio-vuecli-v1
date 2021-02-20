@@ -81,9 +81,7 @@ $secondary-font: "Times New Roman", Times, serif;
 #skills {
 	background: rgba($color: #fafafa, $alpha: 0.5);
 	.skills-column {
-		text-align: center;
 		display: flex;
-		flex-direction: column;
 		align-content: center;
 		justify-content: center;
 		margin: 1rem auto;
@@ -94,8 +92,26 @@ $secondary-font: "Times New Roman", Times, serif;
 }
 
 #projects {
-	min-height: 100vh;
-	color: white;
+	min-height: 95vh;
+	.section-title {
+		color: white;
+	}
+	.container {
+		margin-bottom: 5vh;
+	}
+	.project-column {
+		margin: auto;
+	}
+	.card-img-top {
+		max-height: 300px;
+	}
+	.card-body {
+		padding: 0.75rem;
+	}
+	h4 {
+		margin: 0;
+		text-align: center;
+	}
 }
 
 #contact {
