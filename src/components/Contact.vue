@@ -5,7 +5,7 @@
         <h1 class="text-center section-title text-white">Contact</h1>
 
         <b-alert show variant="warning" class="contact-alert mx-auto">
-          This form is for demonstration purposes only. You may contact me at
+          This form is for demonstration purposes only. You can reach me at
           <code>mendozaeriqjohn48@gmail.com</code>
         </b-alert>
 
@@ -61,6 +61,7 @@
               pill
               variant="success"
               class="contact-submit-button"
+              type="submit"
             >
               Submit
             </b-button>
