@@ -1,7 +1,10 @@
 <template>
   <div id="main-wrapper">
     <Introduction />
-    <About />
+    <section id="about">
+      <About />
+      <Skills />
+    </section>
     <Projects />
     <Contact />
     <TheFooter />
@@ -22,6 +25,7 @@
 <script>
 import Introduction from "@/components/Introduction";
 import About from "@/components/About";
+import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import TheFooter from "@/components/TheFooter";
@@ -31,6 +35,7 @@ export default {
   components: {
     Introduction,
     About,
+    Skills,
     Projects,
     Contact,
     TheFooter,
