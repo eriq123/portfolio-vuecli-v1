@@ -121,6 +121,10 @@ $secondary-font: "Times New Roman", Times, serif;
 	background-repeat: no-repeat;
 	background-size: cover;
 
+	.contact-alert {
+		max-width: 450px;
+	}
+
 	#contact-form {
 		max-width: 450px;
 		margin: auto;

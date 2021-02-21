@@ -4,6 +4,11 @@
       <b-container class="contact-container">
         <h1 class="text-center section-title text-white">Contact</h1>
 
+        <b-alert show variant="warning" class="contact-alert mx-auto">
+          This form is for demonstration purposes only. You may contact me at
+          <code>mendozaeriqjohn48@gmail.com</code>
+        </b-alert>
+
         <form action="" id="contact-form" class="">
           <b-form-group label="First Name:" label-for="first_name" class="mb-3">
             <b-form-input
