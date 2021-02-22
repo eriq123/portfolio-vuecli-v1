@@ -7,35 +7,42 @@
         <b-alert show variant="danger" v-if="projects.length == 0">
           Oops, it seems that there are no projects here.
         </b-alert>
-        <b-row cols="1" cols-md="2" v-if="projects.length > 0">
+        <b-row cols="1" v-if="projects.length > 0">
           <b-col
             v-for="project in projects"
             :key="project.name"
             class="project-column"
           >
-            <b-card
-              :img-src="project.thumbnail"
-              :img-alt="project.name"
-              img-top
-              class="project-card"
-              v-if="project.show"
-              @mouseover="project.show = !project.show"
-            >
+            <b-card no-body class="overflow-hidden">
+              <b-row no-gutters>
+                <b-col md="6">
+                  <b-card-body :title="project.name">
+                    <p class="card-subtitle text-secondary">
+                      {{ project.stack }}
+                    </p>
+                    <p class="card-description">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Veritatis fuga omnis quos dicta voluptatibus quas in
+                      cumque, magnam blanditiis reiciendis cum, incidunt
+                      consequatur eos quidem sunt illo pariatur consequuntur
+                      odit?
+                    </p>
+                    <div class="text-center">
+                      <b-button variant="outline-primary">
+                        Learn more
+                      </b-button>
+                    </div>
+                  </b-card-body>
+                </b-col>
+                <b-col md="6">
+                  <b-card-img
+                    :src="project.thumbnail"
+                    :alt="project.name"
+                    class="rounded-0 project-image"
+                  ></b-card-img>
+                </b-col>
+              </b-row>
             </b-card>
-
-            <div
-              class="project-hovered"
-              v-if="!project.show"
-              @mouseleave="project.show = !project.show"
-            >
-              <div class="project-text">
-                <p class="project-name">{{ project.name }}</p>
-                <p class="tech-name text-secondary">{{ project.stack }}</p>
-              </div>
-              <div class="project-button">
-                <b-button variant="outline-primary">Learn More</b-button>
-              </div>
-            </div>
           </b-col>
         </b-row>
       </b-container>
