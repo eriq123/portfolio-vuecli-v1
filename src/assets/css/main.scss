@@ -63,6 +63,11 @@
 	background-image: $about-bg;
 	background-attachment: fixed;
 	background-size: cover;
+
+	img:hover {
+		transform: scale(1.1);
+	}
+
 	.glass-background {
 		padding-bottom: 2rem;
 	}
@@ -86,6 +91,9 @@
 		margin: 1rem auto;
 		img {
 			margin: auto;
+			&:hover {
+				transform: scale(1.25);
+			}
 		}
 	}
 }
