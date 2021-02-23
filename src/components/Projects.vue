@@ -15,24 +15,12 @@
           >
             <b-card no-body class="overflow-hidden">
               <b-row no-gutters>
-                <b-col md="6">
-                  <b-card-body :title="project.name">
-                    <p class="card-subtitle text-secondary">
-                      {{ project.stack }}
-                    </p>
-                    <p class="card-description">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Veritatis fuga omnis quos dicta voluptatibus quas in
-                      cumque, magnam blanditiis reiciendis cum, incidunt
-                      consequatur eos quidem sunt illo pariatur consequuntur
-                      odit?
-                    </p>
-                    <div class="text-center">
-                      <b-button variant="outline-primary">
-                        Learn more
-                      </b-button>
-                    </div>
-                  </b-card-body>
+                <b-col md="6" class="d-none d-md-block">
+                  <project-card-content
+                    :title="project.name | capitalize"
+                    :stack="project.stack"
+                    @open="openModal(project)"
+                  />
                 </b-col>
                 <b-col md="6">
                   <b-card-img
@@ -41,34 +29,46 @@
                     class="rounded-0 project-image"
                   ></b-card-img>
                 </b-col>
+                <b-col md="6" class="d-md-none">
+                  <project-card-content
+                    :title="project.name | capitalize"
+                    :stack="project.stack"
+                    @open="openModal(project)"
+                  />
+                </b-col>
               </b-row>
             </b-card>
           </b-col>
         </b-row>
       </b-container>
+
+      <b-modal id="project-modal" hide-footer centered :title="modal.title">
+        <p class="my-4">A carousel of {{ modal.title }} will be here soon.</p>
+      </b-modal>
     </div>
   </section>
 </template>
 <script>
+import ProjectCardContent from "./ProjectCardContent";
 export default {
   data() {
     return {
       projects: [
         {
           show: true,
-          name: "Beauty N' Bottles version 1",
+          name: "BnB Inventory version 1",
           thumbnail: `${require("@/assets/projects/beautynbottles-v1/home.png")}`,
           stack: "Laravel / Bootstrap 4",
         },
         {
           show: true,
-          name: "Beauty N' Bottles version 2",
+          name: "BnB Inventory version 2",
           thumbnail: `${require("@/assets/projects/beautynbottles-v2/home.png")}`,
           stack: "Laravel / Vue JS / Vuetify",
         },
         {
           show: true,
-          name: "Calendar Event App",
+          name: "Calendar Event",
           thumbnail: `${require("@/assets/projects/appetizer-event-exam/home.png")}`,
           stack: "Laravel / Vue JS",
         },
@@ -85,7 +85,25 @@ export default {
           stack: "Laravel / jQuery",
         },
       ],
+      modal: {
+        title: null,
+      },
     };
+  },
+  components: {
+    ProjectCardContent,
+  },
+  methods: {
+    openModal(project) {
+      this.modal.title = null;
+      this.modal.title = project.name;
+      this.$root.$emit("bv::show::modal", "project-modal");
+    },
+  },
+  filters: {
+    capitalize(value) {
+      return value.toUpperCase();
+    },
   },
 };
 </script>
