@@ -13,7 +13,11 @@
             :key="project.name"
             class="project-column"
           >
-            <b-card no-body class="overflow-hidden" @click="openModal(project)">
+            <b-card
+              no-body
+              class="overflow-hidden cursor-pointer"
+              @click="openModal(project)"
+            >
               <b-row no-gutters>
                 <b-col md="6" class="d-none d-md-block">
                   <project-card-content

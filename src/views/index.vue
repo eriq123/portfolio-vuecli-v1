@@ -5,6 +5,7 @@
       <About />
       <Skills />
     </section>
+    <Projects />
     <Contact />
     <TheFooter />
 
@@ -24,6 +25,7 @@
 <script>
 import Introduction from "@/components/Introduction";
 import About from "@/components/About";
+import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import TheFooter from "@/components/TheFooter";
@@ -33,6 +35,7 @@ export default {
   components: {
     Introduction,
     About,
+    Projects,
     Skills,
     Contact,
     TheFooter,
