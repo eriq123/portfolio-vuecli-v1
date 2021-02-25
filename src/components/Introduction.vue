@@ -13,10 +13,10 @@
           pill
           variant="outline-light"
           size="lg"
-          to="#projects"
-          v-scroll-to="'#projects'"
+          to="#about"
+          v-scroll-to="'#about'"
         >
-          View my projects
+          More about me
         </b-button>
       </b-jumbotron>
     </b-container>

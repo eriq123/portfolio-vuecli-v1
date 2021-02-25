@@ -15,4 +15,6 @@ npm install
 npm run serve
 ```
 
+Demo: https://eriq123.github.io/portfolio-vuecli-v1/
+
 Special thanks to [svgbackground](https://www.svgbackgrounds.com/) and [vue-scrollto](https://github.com/rigor789/vue-scrollto).
