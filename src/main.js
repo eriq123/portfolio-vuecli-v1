@@ -31,10 +31,19 @@ Vue.use(VueScrollTo, {
      y: true
  })
  
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 Vue.config.productionTip = false;
 
 new Vue({
   router,
   store,
+  created(){
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out"
+    })
+  },
   render: h => h(App)
 }).$mount("#app");

@@ -2,14 +2,29 @@
   <section id="contact">
     <div class="offset">
       <b-container class="contact-container">
-        <h1 class="text-center section-title text-white">Contact</h1>
+        <h1 class="text-center section-title text-white" data-aos="fade-down">
+          Contact
+        </h1>
 
-        <b-alert show variant="warning" class="contact-alert mx-auto">
+        <b-alert
+          show
+          variant="warning"
+          class="contact-alert mx-auto"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+        >
           This form is for demonstration purposes only. You can reach me at
           <code>mendozaeriqjohn48@gmail.com</code>
         </b-alert>
 
-        <form action="" id="contact-form" class="">
+        <form
+          action=""
+          id="contact-form"
+          class=""
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+          data-aos-delay="500"
+        >
           <b-form-group label="First Name:" label-for="first_name" class="mb-3">
             <b-form-input
               type="text"

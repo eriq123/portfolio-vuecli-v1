@@ -1,14 +1,20 @@
 <template>
   <section id="skills">
     <b-container>
-      <h1 class="text-center section-title">Skills</h1>
+      <h1 class="text-center section-title" data-aos="fade-left">Skills</h1>
       <b-row class="about-row" cols="2" cols-lg="3">
         <b-col
           class="p-3 skills-column"
           v-for="(image, index) in images"
           :key="index"
         >
-          <img :src="image.src" :width="image.width" :alt="image.alt" />
+          <img
+            :src="image.src"
+            :width="image.width"
+            :alt="image.alt"
+            data-aos="zoom-in"
+            data-aos-duration="1750"
+          />
         </b-col>
       </b-row>
     </b-container>

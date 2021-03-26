@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <TheNavigation />
+    <TheNavigation data-aos="fade-down" data-aos-duration="1500" />
     <router-view></router-view>
   </div>
 </template>

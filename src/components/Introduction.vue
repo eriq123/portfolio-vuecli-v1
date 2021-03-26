@@ -8,6 +8,7 @@
         text-variant="light"
         header="Hey, I'm Eriq"
         lead="Developer and Freelancer"
+        data-aos="zoom-in"
       >
         <b-button
           pill
@@ -15,6 +16,8 @@
           size="lg"
           to="#projects"
           v-scroll-to="'#projects'"
+          data-aos="fade-up"
+          data-aos-delay="1000"
         >
           View my projects
         </b-button>

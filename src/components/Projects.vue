@@ -1,7 +1,7 @@
 <template>
   <section id="projects">
     <div class="offset">
-      <h1 class="text-center section-title">Projects</h1>
+      <h1 class="text-center section-title" data-aos="fade-up">Projects</h1>
 
       <b-container>
         <b-alert show variant="danger" v-if="projects.length == 0">
@@ -9,14 +9,17 @@
         </b-alert>
         <b-row cols="1" v-if="projects.length > 0">
           <b-col
-            v-for="project in projects"
-            :key="project.name"
+            v-for="(project, index) in projects"
+            :key="index"
             class="project-column"
           >
             <b-card
               no-body
               class="overflow-hidden cursor-pointer"
               @click="openModal(project)"
+              data-aos="fade-up"
+              data-aos-duration="1750"
+              :data-aos-delay="(index + 1) * 100"
             >
               <b-row no-gutters>
                 <b-col md="6" class="d-none d-md-block">
